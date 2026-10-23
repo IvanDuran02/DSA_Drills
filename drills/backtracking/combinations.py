@@ -4,4 +4,24 @@ def combine(n: int, k: int) -> list[list[int]]:
     Target Time: O(k * C(n, k))
     Target Space: O(k)
     """
-    raise NotImplementedError
+
+    # Basically give all combinations through dfs backtrack
+
+    res = []
+    path = []
+
+    def dfs(start):
+        if len(path) == 2:
+            res.append(path.copy())
+        if len(path) > 2:
+            return
+
+        for i in range(start, n):
+            path.append(i)
+
+            dfs(i + 1)
+
+            path.pop()
+
+    dfs(0)
+    return res
