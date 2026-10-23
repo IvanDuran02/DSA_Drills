@@ -1,0 +1,30 @@
+id: dp-unique-paths
+name: Grid Unique Paths
+category: dynamic_programming
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(M * N)
+  space: O(N)
+function_signature: "def unique_paths(m: int, n: int) -> int:\n    \"\"\"\n    Find\
+  \ number of possible unique paths from top-left to bottom-right of m x n grid.\n\
+  \    Only allowed moves: Right and Down.\n    Target Time: O(M * N)\n    Target\
+  \ Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/unique_paths.py
+test_path: tests/dynamic_programming/test_unique_paths.py
+reference_path: reference/dynamic_programming/unique_paths.py
+description: 'Implement Grid Unique Paths in Python 3.14+.
+
+
+  Target Time: O(M * N)
+
+  Target Space: O(N)'
+hints:
+  1: dp[i][j] = dp[i-1][j] + dp[i][j-1].
+  2: Can be compressed into 1D array of size n.
+  3: 'Base case: top row and left column are all 1.'
+  4: O(M * N) time, O(N) space.
+  5: See reference in reference/dynamic_programming/unique_paths.py.
+variants:
+- default

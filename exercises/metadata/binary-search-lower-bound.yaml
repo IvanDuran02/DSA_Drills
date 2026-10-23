@@ -1,0 +1,30 @@
+id: binary-search-lower-bound
+name: Binary Search Lower Bound
+category: binary_search
+difficulty: Easy
+level: 2
+recommended_minutes: 8
+target_complexity:
+  time: O(log N)
+  space: O(1)
+function_signature: "def lower_bound(nums: list[int], target: int) -> int:\n    \"\
+  \"\"\n    Find first index i such that nums[i] >= target. Return len(nums) if all\
+  \ < target.\n    Target Time: O(log N)\n    Target Space: O(1)\n    \"\"\"\n   \
+  \ raise NotImplementedError\n"
+starter_path: drills/binary_search/bs_lower_bound.py
+test_path: tests/binary_search/test_bs_lower_bound.py
+reference_path: reference/binary_search/bs_lower_bound.py
+description: 'Implement Binary Search Lower Bound in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(1)'
+hints:
+  1: Search range is [0, len(nums)].
+  2: 'If nums[mid] >= target: right = mid.'
+  3: 'Else: left = mid + 1.'
+  4: Loop terminates when left == right.
+  5: See reference in reference/binary_search/bs_lower_bound.py.
+variants:
+- default

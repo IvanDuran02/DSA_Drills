@@ -1,0 +1,30 @@
+id: tree-dfs-iter
+name: Iterative Tree Inorder Traversal
+category: trees
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(H)
+function_signature: "from typing import Optional\nfrom drills.structures import TreeNode\n\
+  \ndef inorder_iterative(root: Optional[TreeNode]) -> list[int]:\n    \"\"\"\n  \
+  \  Perform inorder traversal iteratively using an explicit stack.\n    Target Time:\
+  \ O(N)\n    Target Space: O(H)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/trees/tree_dfs_iter.py
+test_path: tests/trees/test_tree_dfs_iter.py
+reference_path: reference/trees/tree_dfs_iter.py
+description: 'Implement Iterative Tree Inorder Traversal in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(H)'
+hints:
+  1: Push all left children onto stack.
+  2: Pop node, record value, then move to right child.
+  3: Avoids stack overflow on deep trees.
+  4: O(H) space.
+  5: See reference in reference/trees/tree_dfs_iter.py.
+variants:
+- default

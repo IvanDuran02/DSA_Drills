@@ -1,0 +1,29 @@
+id: dp-lis
+name: Longest Increasing Subsequence
+category: dynamic_programming
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(N log N) or O(N^2)
+  space: O(N)
+function_signature: "import bisect\n\ndef length_of_lis(nums: list[int]) -> int:\n\
+  \    \"\"\"\n    Find length of longest strictly increasing subsequence.\n    Target\
+  \ Time: O(N log N)\n    Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/lis.py
+test_path: tests/dynamic_programming/test_lis.py
+reference_path: reference/dynamic_programming/lis.py
+description: 'Implement Longest Increasing Subsequence in Python 3.14+.
+
+
+  Target Time: O(N log N) or O(N^2)
+
+  Target Space: O(N)'
+hints:
+  1: Patience sorting / tails array.
+  2: bisect_left finds smallest tail >= x.
+  3: Append if larger than all tails; otherwise replace tail[idx].
+  4: len(tails) is optimal LIS length in O(N log N).
+  5: See reference in reference/dynamic_programming/lis.py.
+variants:
+- default

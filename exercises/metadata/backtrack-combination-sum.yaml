@@ -1,0 +1,30 @@
+id: backtrack-combination-sum
+name: Combination Sum
+category: backtracking
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(N^(T/M))
+  space: O(T/M)
+function_signature: "def combination_sum(candidates: list[int], target: int) -> list[list[int]]:\n\
+  \    \"\"\"\n    Find all unique combinations of candidates where numbers sum to\
+  \ target.\n    Same number may be chosen unlimited number of times.\n    Target\
+  \ Time: O(N^(T/M))\n    Target Space: O(T/M)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/backtracking/combination_sum.py
+test_path: tests/backtracking/test_combination_sum.py
+reference_path: reference/backtracking/combination_sum.py
+description: 'Implement Combination Sum in Python 3.14+.
+
+
+  Target Time: O(N^(T/M))
+
+  Target Space: O(T/M)'
+hints:
+  1: Pass current index i (not i + 1) to allow reusing same candidate.
+  2: Sort candidates to break early when candidates[i] > remain.
+  3: Base case remain == 0 adds combination.
+  4: O(T/M) recursion depth where M is min candidate.
+  5: See reference in reference/backtracking/combination_sum.py.
+variants:
+- default

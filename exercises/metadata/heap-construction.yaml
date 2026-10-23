@@ -1,0 +1,30 @@
+id: heap-construction
+name: Heap Construction (Linear Heapify)
+category: heaps
+difficulty: Easy
+level: 2
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "import heapq\n\ndef build_min_and_max_heaps(nums: list[int])\
+  \ -> tuple[list[int], list[int]]:\n    \"\"\"\n    Build in-place min-heap and max-heap\
+  \ using Python 3.14 heapify functions.\n    Returns (min_heap, max_heap).\n    Target\
+  \ Time: O(N)\n    Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/heaps/heap_construction.py
+test_path: tests/heaps/test_heap_construction.py
+reference_path: reference/heaps/heap_construction.py
+description: 'Implement Heap Construction (Linear Heapify) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: heapq.heapify(list) transforms list into min-heap in O(N).
+  2: heapq.heapify_max(list) transforms list into max-heap in O(N) in Python 3.14.
+  3: Copy list before heapifying if original list must be preserved.
+  4: Linear time O(N) is faster than N successive pushes O(N log N).
+  5: See reference in reference/heaps/heap_construction.py.
+variants:
+- default

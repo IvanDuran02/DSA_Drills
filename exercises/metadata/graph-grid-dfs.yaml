@@ -1,0 +1,29 @@
+id: graph-grid-dfs
+name: Grid DFS (Number of Islands)
+category: graphs
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(R * C)
+  space: O(R * C)
+function_signature: "def num_islands_dfs(grid: list[list[str]]) -> int:\n    \"\"\"\
+  \n    Count connected components of '1's in 2D grid using DFS.\n    Target Time:\
+  \ O(R * C)\n    Target Space: O(R * C)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/grid_dfs.py
+test_path: tests/graphs/test_grid_dfs.py
+reference_path: reference/graphs/grid_dfs.py
+description: 'Implement Grid DFS (Number of Islands) in Python 3.14+.
+
+
+  Target Time: O(R * C)
+
+  Target Space: O(R * C)'
+hints:
+  1: Sink or mark visited connected land cells.
+  2: Check bounds 0 <= nr < R and 0 <= nc < C.
+  3: Count increments once per unvisited '1' found.
+  4: O(R * C) time.
+  5: See reference in reference/graphs/grid_dfs.py.
+variants:
+- default

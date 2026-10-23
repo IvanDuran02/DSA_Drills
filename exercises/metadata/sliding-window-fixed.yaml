@@ -1,0 +1,29 @@
+id: sliding-window-fixed
+name: Fixed-Size Sliding Window (Max Sum Subarray)
+category: sliding_window
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "def max_sum_subarray(nums: list[int], k: int) -> int:\n    \"\
+  \"\"\n    Find maximum sum of any contiguous subarray of size k.\n    Target Time:\
+  \ O(N)\n    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/sliding_window/fixed_window.py
+test_path: tests/sliding_window/test_fixed_window.py
+reference_path: reference/sliding_window/fixed_window.py
+description: 'Implement Fixed-Size Sliding Window (Max Sum Subarray) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: Calculate sum of first k elements.
+  2: Slide window by adding nums[i] and subtracting nums[i - k].
+  3: Tracks max in O(N) time with O(1) extra space.
+  4: Handles empty or k > len(nums) edge case.
+  5: See reference in reference/sliding_window/fixed_window.py.
+variants:
+- default

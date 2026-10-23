@@ -1,0 +1,29 @@
+id: backtrack-subsets
+name: Subsets (Power Set)
+category: backtracking
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N * 2^N)
+  space: O(N)
+function_signature: "def subsets(nums: list[int]) -> list[list[int]]:\n    \"\"\"\n\
+  \    Return all possible subsets (power set) of distinct integers nums.\n    Target\
+  \ Time: O(N * 2^N)\n    Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/backtracking/subsets.py
+test_path: tests/backtracking/test_subsets.py
+reference_path: reference/backtracking/subsets.py
+description: 'Implement Subsets (Power Set) in Python 3.14+.
+
+
+  Target Time: O(N * 2^N)
+
+  Target Space: O(N)'
+hints:
+  1: At each step, append current copy of subset to result.
+  2: Iterate from start index, append nums[i], recurse with i + 1, pop().
+  3: Total subsets is 2^N.
+  4: Backtrack pop() restores state.
+  5: See reference in reference/backtracking/subsets.py.
+variants:
+- default

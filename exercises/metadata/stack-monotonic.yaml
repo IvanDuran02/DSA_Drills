@@ -1,0 +1,30 @@
+id: stack-monotonic
+name: Monotonic Stack (Previous Smaller Element)
+category: stacks
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(N)
+function_signature: "def previous_smaller_element(nums: list[int]) -> list[int]:\n\
+  \    \"\"\"\n    For each element, find previous strictly smaller element's value.\n\
+  \    Return -1 if none exists.\n    Target Time: O(N)\n    Target Space: O(N)\n\
+  \    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/stacks/monotonic_stack.py
+test_path: tests/stacks/test_monotonic_stack.py
+reference_path: reference/stacks/monotonic_stack.py
+description: 'Implement Monotonic Stack (Previous Smaller Element) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(N)'
+hints:
+  1: Maintain stack of strictly increasing elements.
+  2: Pop while stack[-1] >= x.
+  3: Top of stack is previous smaller; append x to stack.
+  4: 'Each element pushed and popped once: O(N) time.'
+  5: See reference in reference/stacks/monotonic_stack.py.
+variants:
+- default

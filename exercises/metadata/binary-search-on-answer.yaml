@@ -1,0 +1,29 @@
+id: binary-search-on-answer
+name: Binary Search on Answer (Koko Eating Bananas)
+category: binary_search
+difficulty: Medium
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(N log(max(P)))
+  space: O(1)
+function_signature: "def min_eating_speed(piles: list[int], h: int) -> int:\n    \"\
+  \"\"\n    Find minimum integer speed k to eat all bananas within h hours.\n    Target\
+  \ Time: O(N log(max(piles)))\n    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/binary_search/bs_on_answer.py
+test_path: tests/binary_search/test_bs_on_answer.py
+reference_path: reference/binary_search/bs_on_answer.py
+description: 'Implement Binary Search on Answer (Koko Eating Bananas) in Python 3.14+.
+
+
+  Target Time: O(N log(max(P)))
+
+  Target Space: O(1)'
+hints:
+  1: 'Search space is speed range: 1 to max(piles).'
+  2: 'Monotonic predicate: if can finish at speed k, can finish at any speed > k.'
+  3: Find minimal valid speed with lower bound search.
+  4: Hours to eat pile p at speed k is ceil(p / k) or (p + k - 1) // k.
+  5: See reference in reference/binary_search/bs_on_answer.py.
+variants:
+- default

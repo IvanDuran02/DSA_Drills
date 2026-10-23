@@ -1,0 +1,29 @@
+id: stack-next-greater
+name: Next Greater Element
+category: stacks
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(N)
+function_signature: "def next_greater_elements(nums: list[int]) -> list[int]:\n  \
+  \  \"\"\"\n    Find next greater element for each number in circular array nums.\n\
+  \    Target Time: O(N)\n    Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/stacks/next_greater_elem.py
+test_path: tests/stacks/test_next_greater_elem.py
+reference_path: reference/stacks/next_greater_elem.py
+description: 'Implement Next Greater Element in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(N)'
+hints:
+  1: Simulate circular array by iterating 2 * n times with index i % n.
+  2: Push indices onto stack during first pass (i < n).
+  3: Pop when nums[i % n] > nums[stack[-1]].
+  4: O(N) time.
+  5: See reference in reference/stacks/next_greater_elem.py.
+variants:
+- default

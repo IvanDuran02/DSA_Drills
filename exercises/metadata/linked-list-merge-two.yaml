@@ -1,0 +1,30 @@
+id: linked-list-merge-two
+name: Merge Two Sorted Lists
+category: linked_lists
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N + M)
+  space: O(1)
+function_signature: "from typing import Optional\nfrom drills.structures import ListNode\n\
+  \ndef merge_two_lists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:\n\
+  \    \"\"\"\n    Merge two sorted linked lists into one sorted linked list.\n  \
+  \  Target Time: O(N + M)\n    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/linked_lists/merge_two_sorted.py
+test_path: tests/linked_lists/test_merge_two_sorted.py
+reference_path: reference/linked_lists/merge_two_sorted.py
+description: 'Implement Merge Two Sorted Lists in Python 3.14+.
+
+
+  Target Time: O(N + M)
+
+  Target Space: O(1)'
+hints:
+  1: Use dummy head node to simplify edge cases.
+  2: Compare p1.val and p2.val, attach smaller to curr.next.
+  3: 'Attach non-empty remainder: curr.next = p1 or p2.'
+  4: O(1) extra space.
+  5: See reference in reference/linked_lists/merge_two_sorted.py.
+variants:
+- default

@@ -1,0 +1,30 @@
+id: heap-native-min
+name: Native Min-Heap Operations
+category: heaps
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(log N)
+  space: O(N)
+function_signature: "import heapq\n\nclass MinHeapPractice:\n    def __init__(self):\n\
+  \        self.heap: list[int] = []\n\n    def push(self, val: int) -> None:\n  \
+  \      raise NotImplementedError\n\n    def pop(self) -> int:\n        raise NotImplementedError\n\
+  \n    def peek(self) -> int:\n        raise NotImplementedError\n"
+starter_path: drills/heaps/native_min_heap.py
+test_path: tests/heaps/test_native_min_heap.py
+reference_path: reference/heaps/native_min_heap.py
+description: 'Implement Native Min-Heap Operations in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(N)'
+hints:
+  1: Use heapq.heappush(self.heap, val).
+  2: Use heapq.heappop(self.heap).
+  3: Smallest element is at self.heap[0].
+  4: All push and pop operations take O(log N).
+  5: See reference in reference/heaps/native_min_heap.py.
+variants:
+- default

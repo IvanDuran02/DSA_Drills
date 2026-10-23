@@ -1,0 +1,31 @@
+id: heap-merge-k-sorted
+name: Merge K Sorted Lists
+category: heaps
+difficulty: Hard
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(N log K)
+  space: O(K)
+function_signature: "import heapq\n\ndef merge_k_sorted_arrays(arrays: list[list[int]])\
+  \ -> list[int]:\n    \"\"\"\n    Merge k sorted integer arrays into one sorted array\
+  \ using a min-heap.\n    Target Time: O(N log K)\n    Target Space: O(K)\n    \"\
+  \"\"\n    raise NotImplementedError\n"
+starter_path: drills/heaps/merge_k_sorted.py
+test_path: tests/heaps/test_merge_k_sorted.py
+reference_path: reference/heaps/merge_k_sorted.py
+description: 'Implement Merge K Sorted Lists in Python 3.14+.
+
+
+  Target Time: O(N log K)
+
+  Target Space: O(K)'
+hints:
+  1: 'Heap holds current front element from each of the K lists: (val, list_index,
+    elem_index).'
+  2: Pop minimum element, append to result, push next element from that same list.
+  3: Heap size never exceeds K.
+  4: O(N log K) where N is total elements across all lists.
+  5: See reference in reference/heaps/merge_k_sorted.py.
+variants:
+- default

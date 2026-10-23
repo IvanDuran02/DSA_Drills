@@ -1,0 +1,31 @@
+id: stack-basic-ops
+name: Basic Stack Operations
+category: stacks
+difficulty: Easy
+level: 1
+recommended_minutes: 6
+target_complexity:
+  time: O(1) per op
+  space: O(N)
+function_signature: "class ArrayStack:\n    def __init__(self):\n        self._items\
+  \ = []\n\n    def push(self, val: int) -> None:\n        raise NotImplementedError\n\
+  \n    def pop(self) -> int:\n        raise NotImplementedError\n\n    def peek(self)\
+  \ -> int:\n        raise NotImplementedError\n\n    def is_empty(self) -> bool:\n\
+  \        raise NotImplementedError\n"
+starter_path: drills/stacks/basic_stack.py
+test_path: tests/stacks/test_basic_stack.py
+reference_path: reference/stacks/basic_stack.py
+description: 'Implement Basic Stack Operations in Python 3.14+.
+
+
+  Target Time: O(1) per op
+
+  Target Space: O(N)'
+hints:
+  1: Use list.append and list.pop for O(1) amortized stack behavior.
+  2: peek accesses self._items[-1].
+  3: Raise IndexError if popping/peeking empty stack.
+  4: O(1) time per operation.
+  5: See reference in reference/stacks/basic_stack.py.
+variants:
+- default

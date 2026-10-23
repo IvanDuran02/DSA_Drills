@@ -1,0 +1,29 @@
+id: sliding-window-longest-substring
+name: Longest Substring Without Repeating Characters
+category: sliding_window
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(min(N, Sigma))
+function_signature: "def length_of_longest_substring(s: str) -> int:\n    \"\"\"\n\
+  \    Find length of longest substring without repeating characters.\n    Target\
+  \ Time: O(N)\n    Target Space: O(min(N, Sigma))\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/sliding_window/longest_unique_substr.py
+test_path: tests/sliding_window/test_longest_unique_substr.py
+reference_path: reference/sliding_window/longest_unique_substr.py
+description: 'Implement Longest Substring Without Repeating Characters in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(min(N, Sigma))'
+hints:
+  1: Map each character to its most recent index.
+  2: If char is seen and char_index[ch] >= left, jump left to char_index[ch] + 1.
+  3: Window length is right - left + 1.
+  4: O(N) time with one pass.
+  5: See reference in reference/sliding_window/longest_unique_substr.py.
+variants:
+- default

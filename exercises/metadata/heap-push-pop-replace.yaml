@@ -1,0 +1,31 @@
+id: heap-push-pop-replace
+name: Heap Replacement Operations
+category: heaps
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(log N)
+  space: O(1)
+function_signature: "import heapq\n\ndef replace_min_and_max(min_heap: list[int],\
+  \ max_heap: list[int], val: int) -> tuple[int, int]:\n    \"\"\"\n    Perform heapreplace\
+  \ on min_heap and heapreplace_max on max_heap with val.\n    Returns (popped_min,\
+  \ popped_max).\n    Target Time: O(log N)\n    Target Space: O(1)\n    \"\"\"\n\
+  \    raise NotImplementedError\n"
+starter_path: drills/heaps/heap_replace.py
+test_path: tests/heaps/test_heap_replace.py
+reference_path: reference/heaps/heap_replace.py
+description: 'Implement Heap Replacement Operations in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(1)'
+hints:
+  1: heapreplace pops and returns current root, then inserts new item.
+  2: heapreplace_max performs the same replacement on a max-heap in Python 3.14.
+  3: Single sift-down is more efficient than a separate heappop followed by heappush.
+  4: O(log N) time.
+  5: See reference in reference/heaps/heap_replace.py.
+variants:
+- default

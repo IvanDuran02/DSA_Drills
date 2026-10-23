@@ -1,0 +1,30 @@
+id: linked-list-reverse
+name: Reverse Linked List
+category: linked_lists
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "from typing import Optional\nfrom drills.structures import ListNode\n\
+  \ndef reverse_list(head: Optional[ListNode]) -> Optional[ListNode]:\n    \"\"\"\n\
+  \    Reverse a singly-linked list in-place and return new head.\n    Target Time:\
+  \ O(N)\n    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/linked_lists/reverse_linked_list.py
+test_path: tests/linked_lists/test_reverse_linked_list.py
+reference_path: reference/linked_lists/reverse_linked_list.py
+description: 'Implement Reverse Linked List in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: 'Keep 3 pointers: prev = None, curr = head, nxt = curr.next.'
+  2: Point curr.next = prev.
+  3: Advance prev = curr and curr = nxt.
+  4: Return prev at the end.
+  5: See reference in reference/linked_lists/reverse_linked_list.py.
+variants:
+- default

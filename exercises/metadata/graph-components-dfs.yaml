@@ -1,0 +1,30 @@
+id: graph-components-dfs
+name: Connected Components using DFS
+category: graphs
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "def count_components_dfs(n: int, edges: list[list[int]]) -> int:\n\
+  \    \"\"\"\n    Count connected components in an undirected graph with n nodes\
+  \ (0 to n-1) using DFS.\n    Target Time: O(V + E)\n    Target Space: O(V)\n   \
+  \ \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/components_dfs.py
+test_path: tests/graphs/test_components_dfs.py
+reference_path: reference/graphs/components_dfs.py
+description: 'Implement Connected Components using DFS in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: Outer loop checks every vertex 0..n-1.
+  2: Trigger DFS if unvisited and increment count.
+  3: Undirected edges need bidirectional insertion.
+  4: Visited set spans all components.
+  5: See reference in reference/graphs/components_dfs.py.
+variants:
+- default

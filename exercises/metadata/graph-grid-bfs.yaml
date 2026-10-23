@@ -1,0 +1,30 @@
+id: graph-grid-bfs
+name: Grid BFS (Shortest Path)
+category: graphs
+difficulty: Medium
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(R * C)
+  space: O(R * C)
+function_signature: "def shortest_path_binary_matrix(grid: list[list[int]]) -> int:\n\
+  \    \"\"\"\n    Shortest 8-directional clear path from (0,0) to (n-1, n-1) with\
+  \ value 0.\n    Target Time: O(R * C)\n    Target Space: O(R * C)\n    \"\"\"\n\
+  \    raise NotImplementedError\n"
+starter_path: drills/graphs/grid_bfs.py
+test_path: tests/graphs/test_grid_bfs.py
+reference_path: reference/graphs/grid_bfs.py
+description: 'Implement Grid BFS (Shortest Path) in Python 3.14+.
+
+
+  Target Time: O(R * C)
+
+  Target Space: O(R * C)'
+hints:
+  1: Check if start or end is blocked (value 1).
+  2: Use 8 directions.
+  3: First arrival at (n-1, n-1) is guaranteed shortest.
+  4: O(R * C) time.
+  5: See reference in reference/graphs/grid_bfs.py.
+variants:
+- default

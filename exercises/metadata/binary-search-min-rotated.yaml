@@ -1,0 +1,29 @@
+id: binary-search-min-rotated
+name: Find Minimum in Rotated Sorted Array
+category: binary_search
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(log N)
+  space: O(1)
+function_signature: "def find_min(nums: list[int]) -> int:\n    \"\"\"\n    Find minimum\
+  \ element in rotated sorted array of unique elements.\n    Target Time: O(log N)\n\
+  \    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/binary_search/bs_min_rotated.py
+test_path: tests/binary_search/test_bs_min_rotated.py
+reference_path: reference/binary_search/bs_min_rotated.py
+description: 'Implement Find Minimum in Rotated Sorted Array in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(1)'
+hints:
+  1: Compare nums[mid] against nums[right].
+  2: 'If nums[mid] > nums[right], minimum lies in right half: left = mid + 1.'
+  3: 'Else, minimum lies at mid or to the left: right = mid.'
+  4: Loop ends when left == right.
+  5: See reference in reference/binary_search/bs_min_rotated.py.
+variants:
+- default

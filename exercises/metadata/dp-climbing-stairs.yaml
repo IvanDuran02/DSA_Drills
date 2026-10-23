@@ -1,0 +1,29 @@
+id: dp-climbing-stairs
+name: Climbing Stairs
+category: dynamic_programming
+difficulty: Easy
+level: 1
+recommended_minutes: 6
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "def climb_stairs(n: int) -> int:\n    \"\"\"\n    Find distinct\
+  \ ways to climb n stairs taking 1 or 2 steps.\n    Target Time: O(N)\n    Target\
+  \ Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/climbing_stairs.py
+test_path: tests/dynamic_programming/test_climbing_stairs.py
+reference_path: reference/dynamic_programming/climbing_stairs.py
+description: 'Implement Climbing Stairs in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: ways(n) = ways(n - 1) + ways(n - 2).
+  2: 'Base cases: 1 stair -> 1 way, 2 stairs -> 2 ways.'
+  3: Fibonacci pattern.
+  4: O(1) space.
+  5: See reference in reference/dynamic_programming/climbing_stairs.py.
+variants:
+- default

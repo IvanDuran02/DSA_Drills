@@ -1,0 +1,30 @@
+id: linked-list-detect-cycle
+name: Linked List Cycle II (Find Entry Point)
+category: linked_lists
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "from typing import Optional\nfrom drills.structures import ListNode\n\
+  \ndef detect_cycle_entry(head: Optional[ListNode]) -> Optional[ListNode]:\n    \"\
+  \"\"\n    Return node where cycle begins, or None if no cycle.\n    Target Time:\
+  \ O(N)\n    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/linked_lists/detect_cycle_ii.py
+test_path: tests/linked_lists/test_detect_cycle_ii.py
+reference_path: reference/linked_lists/detect_cycle_ii.py
+description: 'Implement Linked List Cycle II (Find Entry Point) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: Find intersection point with slow and fast pointers.
+  2: Reset p1 to head, keep p2 at intersection.
+  3: Advance both 1 step at a time; meeting point is cycle entrance.
+  4: Floyd's Tortoise and Hare algorithm.
+  5: See reference in reference/linked_lists/detect_cycle_ii.py.
+variants:
+- default

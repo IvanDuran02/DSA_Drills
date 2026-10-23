@@ -1,0 +1,29 @@
+id: graph-cycle-undirected
+name: Undirected Cycle Detection
+category: graphs
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "def has_cycle_undirected(n: int, edges: list[list[int]]) -> bool:\n\
+  \    \"\"\"\n    Determine whether an undirected graph contains a cycle.\n    Target\
+  \ Time: O(V + E)\n    Target Space: O(V)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/cycle_undirected.py
+test_path: tests/graphs/test_cycle_undirected.py
+reference_path: reference/graphs/cycle_undirected.py
+description: 'Implement Undirected Cycle Detection in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: Track parent to avoid false cycle from bidirectional edge.
+  2: If neighbor in visited and neighbor != parent, cycle found.
+  3: Loop 0..n-1 to handle disconnected components.
+  4: Time complexity O(V + E).
+  5: See reference in reference/graphs/cycle_undirected.py.
+variants:
+- default

@@ -1,0 +1,30 @@
+id: dp-coin-change
+name: Coin Change (Fewest Coins)
+category: dynamic_programming
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(amount * len(coins))
+  space: O(amount)
+function_signature: "def coin_change(coins: list[int], amount: int) -> int:\n    \"\
+  \"\"\n    Find fewest coins needed to make up amount. Return -1 if impossible.\n\
+  \    Target Time: O(amount * len(coins))\n    Target Space: O(amount)\n    \"\"\"\
+  \n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/coin_change.py
+test_path: tests/dynamic_programming/test_coin_change.py
+reference_path: reference/dynamic_programming/coin_change.py
+description: 'Implement Coin Change (Fewest Coins) in Python 3.14+.
+
+
+  Target Time: O(amount * len(coins))
+
+  Target Space: O(amount)'
+hints:
+  1: dp[x] represents min coins to make amount x.
+  2: dp[0] = 0, others float('inf').
+  3: dp[x] = min(dp[x], dp[x - coin] + 1).
+  4: Return -1 if dp[amount] remains infinity.
+  5: See reference in reference/dynamic_programming/coin_change.py.
+variants:
+- default

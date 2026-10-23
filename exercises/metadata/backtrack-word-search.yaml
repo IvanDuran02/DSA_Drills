@@ -1,0 +1,30 @@
+id: backtrack-word-search
+name: Word Search in Grid
+category: backtracking
+difficulty: Medium
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(N * 3^L)
+  space: O(L)
+function_signature: "def exist(board: list[list[str]], word: str) -> bool:\n    \"\
+  \"\"\n    Determine if word exists in grid with horizontally or vertically adjacent\
+  \ cells.\n    Target Time: O(N * 3^L)\n    Target Space: O(L)\n    \"\"\"\n    raise\
+  \ NotImplementedError\n"
+starter_path: drills/backtracking/word_search.py
+test_path: tests/backtracking/test_word_search.py
+reference_path: reference/backtracking/word_search.py
+description: 'Implement Word Search in Grid in Python 3.14+.
+
+
+  Target Time: O(N * 3^L)
+
+  Target Space: O(L)'
+hints:
+  1: Temporarily replace board[r][c] with '#' to mark visited without extra memory.
+  2: Restore character board[r][c] = temp before returning.
+  3: 'Check 4 neighbors: (0, 1), (1, 0), (0, -1), (-1, 0).'
+  4: Base case idx == len(word) indicates success.
+  5: See reference in reference/backtracking/word_search.py.
+variants:
+- default

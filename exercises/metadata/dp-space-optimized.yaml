@@ -1,0 +1,29 @@
+id: dp-space-optimized
+name: Maximum Subarray (Kadane's Space-Optimized)
+category: dynamic_programming
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "def max_sub_array(nums: list[int]) -> int:\n    \"\"\"\n    Find\
+  \ contiguous subarray with largest sum (Kadane's algorithm).\n    Target Time: O(N)\n\
+  \    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/max_subarray.py
+test_path: tests/dynamic_programming/test_max_subarray.py
+reference_path: reference/dynamic_programming/max_subarray.py
+description: 'Implement Maximum Subarray (Kadane''s Space-Optimized) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: curr_max = max(x, curr_max + x).
+  2: Either start a new subarray at x or extend previous.
+  3: Track overall maximum max_so_far.
+  4: O(N) time and O(1) space.
+  5: See reference in reference/dynamic_programming/max_subarray.py.
+variants:
+- default

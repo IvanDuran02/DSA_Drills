@@ -1,0 +1,30 @@
+id: graph-adj-list
+name: Build an Adjacency List
+category: graphs
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(V + E)
+  space: O(V + E)
+function_signature: "def build_adj_list(n: int, edges: list[list[int]], directed:\
+  \ bool = False) -> dict[int, list[int]]:\n    \"\"\"\n    Build an adjacency list\
+  \ representation from an edge list for vertices 0 to n-1.\n    Target Time: O(V\
+  \ + E)\n    Target Space: O(V + E)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/adj_list.py
+test_path: tests/graphs/test_adj_list.py
+reference_path: reference/graphs/adj_list.py
+description: 'Implement Build an Adjacency List in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V + E)'
+hints:
+  1: Test with disconnected vertices and check dict initialization.
+  2: Initialize a list for each vertex from 0 to n-1 before adding edges.
+  3: Remember to add reverse edges (v -> u) only when directed is False.
+  4: Adjacency lists use O(V) space for dictionary keys and O(E) for neighbors.
+  5: See reference implementation in reference/graphs/adj_list.py.
+variants:
+- default

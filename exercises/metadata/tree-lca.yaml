@@ -1,0 +1,30 @@
+id: tree-lca
+name: Lowest Common Ancestor (Binary Tree)
+category: trees
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(N)
+  space: O(H)
+function_signature: "from typing import Optional\nfrom drills.structures import TreeNode\n\
+  \ndef lowest_common_ancestor(root: Optional[TreeNode], p: int, q: int) -> Optional[TreeNode]:\n\
+  \    \"\"\"\n    Find Lowest Common Ancestor node containing value p and q.\n  \
+  \  Target Time: O(N)\n    Target Space: O(H)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/trees/lca.py
+test_path: tests/trees/test_lca.py
+reference_path: reference/trees/lca.py
+description: 'Implement Lowest Common Ancestor (Binary Tree) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(H)'
+hints:
+  1: If root is None or matches p or q, return root.
+  2: Recurse on left and right.
+  3: If both left and right return non-null, root is LCA.
+  4: Otherwise return whichever side returned non-null.
+  5: See reference in reference/trees/lca.py.
+variants:
+- default

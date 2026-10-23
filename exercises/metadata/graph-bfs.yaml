@@ -1,0 +1,30 @@
+id: graph-bfs
+name: Breadth First Search (BFS)
+category: graphs
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "from collections import deque\n\ndef bfs(adj: dict[int, list[int]],\
+  \ start: int) -> list[int]:\n    \"\"\"\n    Traverse graph using Breadth First\
+  \ Search starting from 'start'.\n    Target Time: O(V + E)\n    Target Space: O(V)\n\
+  \    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/bfs.py
+test_path: tests/graphs/test_bfs.py
+reference_path: reference/graphs/bfs.py
+description: 'Implement Breadth First Search (BFS) in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: Use collections.deque for O(1) pops.
+  2: Mark visited upon enqueueing.
+  3: BFS explores level by level.
+  4: Queue size is bounded by O(V).
+  5: See reference implementation in reference/graphs/bfs.py.
+variants:
+- default

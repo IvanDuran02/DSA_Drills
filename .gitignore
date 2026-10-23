@@ -1,0 +1,26 @@
+# Binaries
+drills
+bin/
+dist/
+
+# SQLite progress DB
+.drills/
+*.db
+*.db-journal
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.hypothesis/
+.venv/
+venv/
+env/
+
+# OS / Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~

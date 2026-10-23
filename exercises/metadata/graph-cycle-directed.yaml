@@ -1,0 +1,29 @@
+id: graph-cycle-directed
+name: Directed Cycle Detection
+category: graphs
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "def has_cycle_directed(n: int, edges: list[list[int]]) -> bool:\n\
+  \    \"\"\"\n    Determine whether a directed graph contains a cycle.\n    Target\
+  \ Time: O(V + E)\n    Target Space: O(V)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/cycle_directed.py
+test_path: tests/graphs/test_cycle_directed.py
+reference_path: reference/graphs/cycle_directed.py
+description: 'Implement Directed Cycle Detection in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: '3-state coloring: unvisited (0), visiting (1), finished (2).'
+  2: Back edge to state 1 signifies cycle.
+  3: Set state back to 2 upon leaving recursion.
+  4: O(V + E) time.
+  5: See reference in reference/graphs/cycle_directed.py.
+variants:
+- default

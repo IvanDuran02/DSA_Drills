@@ -1,0 +1,30 @@
+id: tree-postorder-rec
+name: Recursive Postorder Traversal
+category: trees
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(H)
+function_signature: "from typing import Optional\nfrom drills.structures import TreeNode\n\
+  \ndef postorder_traversal(root: Optional[TreeNode]) -> list[int]:\n    \"\"\"\n\
+  \    Return postorder traversal: Left -> Right -> Root.\n    Target Time: O(N)\n\
+  \    Target Space: O(H)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/trees/postorder_rec.py
+test_path: tests/trees/test_postorder_rec.py
+reference_path: reference/trees/postorder_rec.py
+description: 'Implement Recursive Postorder Traversal in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(H)'
+hints:
+  1: Visit children before root.
+  2: Useful for bottom-up tree calculations.
+  3: O(N) time.
+  4: O(H) space.
+  5: See reference in reference/trees/postorder_rec.py.
+variants:
+- default

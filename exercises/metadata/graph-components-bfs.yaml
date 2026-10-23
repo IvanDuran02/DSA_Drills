@@ -1,0 +1,30 @@
+id: graph-components-bfs
+name: Connected Components using BFS
+category: graphs
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "def count_components_bfs(n: int, edges: list[list[int]]) -> int:\n\
+  \    \"\"\"\n    Count connected components in an undirected graph with n nodes\
+  \ using BFS.\n    Target Time: O(V + E)\n    Target Space: O(V)\n    \"\"\"\n  \
+  \  raise NotImplementedError\n"
+starter_path: drills/graphs/components_bfs.py
+test_path: tests/graphs/test_components_bfs.py
+reference_path: reference/graphs/components_bfs.py
+description: 'Implement Connected Components using BFS in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: BFS queue drains each component completely.
+  2: Increment count on new queue launch.
+  3: Mark visited when enqueueing.
+  4: Complexity is O(V + E).
+  5: See reference in reference/graphs/components_bfs.py.
+variants:
+- default

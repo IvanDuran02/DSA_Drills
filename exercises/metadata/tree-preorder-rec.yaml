@@ -1,0 +1,30 @@
+id: tree-preorder-rec
+name: Recursive Preorder Traversal
+category: trees
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(H)
+function_signature: "from typing import Optional\nfrom drills.structures import TreeNode\n\
+  \ndef preorder_traversal(root: Optional[TreeNode]) -> list[int]:\n    \"\"\"\n \
+  \   Return preorder traversal of binary tree: Root -> Left -> Right.\n    Target\
+  \ Time: O(N)\n    Target Space: O(H)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/trees/preorder_rec.py
+test_path: tests/trees/test_preorder_rec.py
+reference_path: reference/trees/preorder_rec.py
+description: 'Implement Recursive Preorder Traversal in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(H)'
+hints:
+  1: Preorder visits current node before children.
+  2: Recurse on left then right.
+  3: 'Base case: if not node: return.'
+  4: Space is tree height O(H).
+  5: See reference in reference/trees/preorder_rec.py.
+variants:
+- default

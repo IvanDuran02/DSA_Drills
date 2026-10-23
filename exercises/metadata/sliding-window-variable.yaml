@@ -1,0 +1,30 @@
+id: sliding-window-variable
+name: Minimum Size Subarray Sum
+category: sliding_window
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "def min_sub_array_len(target: int, nums: list[int]) -> int:\n\
+  \    \"\"\"\n    Find minimal length of contiguous subarray with sum >= target.\
+  \ Return 0 if none.\n    Target Time: O(N)\n    Target Space: O(1)\n    \"\"\"\n\
+  \    raise NotImplementedError\n"
+starter_path: drills/sliding_window/variable_window.py
+test_path: tests/sliding_window/test_variable_window.py
+reference_path: reference/sliding_window/variable_window.py
+description: 'Implement Minimum Size Subarray Sum in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: Expand right pointer, accumulating curr_sum.
+  2: While curr_sum >= target, update min_len and contract left pointer.
+  3: Each element is visited at most twice.
+  4: O(N) time, O(1) space.
+  5: See reference in reference/sliding_window/variable_window.py.
+variants:
+- default

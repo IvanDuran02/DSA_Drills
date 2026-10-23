@@ -1,0 +1,30 @@
+id: heap-kth-largest
+name: Kth Largest Element in an Array
+category: heaps
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N log K)
+  space: O(K)
+function_signature: "import heapq\n\ndef find_kth_largest(nums: list[int], k: int)\
+  \ -> int:\n    \"\"\"\n    Find kth largest element in unsorted array using a min-heap\
+  \ of size k.\n    Target Time: O(N log K)\n    Target Space: O(K)\n    \"\"\"\n\
+  \    raise NotImplementedError\n"
+starter_path: drills/heaps/kth_largest.py
+test_path: tests/heaps/test_kth_largest.py
+reference_path: reference/heaps/kth_largest.py
+description: 'Implement Kth Largest Element in an Array in Python 3.14+.
+
+
+  Target Time: O(N log K)
+
+  Target Space: O(K)'
+hints:
+  1: A min-heap of size K keeps the K largest elements seen so far.
+  2: The smallest of the K largest elements is the root heap[0].
+  3: Push onto heap, and pop whenever size exceeds K.
+  4: Time complexity O(N log K), space O(K).
+  5: See reference in reference/heaps/kth_largest.py.
+variants:
+- default

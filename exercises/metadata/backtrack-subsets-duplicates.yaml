@@ -1,0 +1,29 @@
+id: backtrack-subsets-duplicates
+name: Subsets II (With Duplicates)
+category: backtracking
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(N * 2^N)
+  space: O(N)
+function_signature: "def subsets_with_dup(nums: list[int]) -> list[list[int]]:\n \
+  \   \"\"\"\n    Return all possible subsets with duplicate handling.\n    Target\
+  \ Time: O(N * 2^N)\n    Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/backtracking/subsets_duplicates.py
+test_path: tests/backtracking/test_subsets_duplicates.py
+reference_path: reference/backtracking/subsets_duplicates.py
+description: 'Implement Subsets II (With Duplicates) in Python 3.14+.
+
+
+  Target Time: O(N * 2^N)
+
+  Target Space: O(N)'
+hints:
+  1: Sort nums to group duplicates together.
+  2: 'Skip duplicate elements: if i > start and nums[i] == nums[i - 1]: continue.'
+  3: This prevents duplicate subset branches at the same recursion depth.
+  4: O(N * 2^N) time.
+  5: See reference in reference/backtracking/subsets_duplicates.py.
+variants:
+- default

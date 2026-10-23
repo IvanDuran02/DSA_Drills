@@ -1,0 +1,30 @@
+id: graph-topo-kahn
+name: Topological Sort using Kahn's Algorithm
+category: graphs
+difficulty: Medium
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "from collections import deque\n\ndef topological_sort_kahn(n:\
+  \ int, edges: list[list[int]]) -> list[int]:\n    \"\"\"\n    Return a valid topological\
+  \ order using Kahn's algorithm (in-degree BFS).\n    Target Time: O(V + E)\n   \
+  \ Target Space: O(V)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/topo_kahn.py
+test_path: tests/graphs/test_topo_kahn.py
+reference_path: reference/graphs/topo_kahn.py
+description: 'Implement Topological Sort using Kahn''s Algorithm in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: Compute in-degrees. Enqueue all 0-in-degree vertices.
+  2: Decrement neighbor in-degree on pop; enqueue when 0.
+  3: If result length < n, cycle exists.
+  4: O(V + E) time.
+  5: See reference in reference/graphs/topo_kahn.py.
+variants:
+- default

@@ -1,0 +1,30 @@
+id: binary-search-first-last
+name: First and Last Position of Element
+category: binary_search
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(log N)
+  space: O(1)
+function_signature: "def search_range(nums: list[int], target: int) -> list[int]:\n\
+  \    \"\"\"\n    Find starting and ending position of target in sorted array nums.\n\
+  \    Return [-1, -1] if target not found.\n    Target Time: O(log N)\n    Target\
+  \ Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/binary_search/first_last_pos.py
+test_path: tests/binary_search/test_first_last_pos.py
+reference_path: reference/binary_search/first_last_pos.py
+description: 'Implement First and Last Position of Element in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(1)'
+hints:
+  1: 'Perform two separate binary searches: one for lower bound, one for upper bound.'
+  2: To find first, continue searching left (r = mid - 1) on match.
+  3: To find last, continue searching right (l = mid + 1) on match.
+  4: O(log N) total time.
+  5: See reference in reference/binary_search/first_last_pos.py.
+variants:
+- default

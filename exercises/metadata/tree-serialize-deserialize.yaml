@@ -1,0 +1,30 @@
+id: tree-serialize-deserialize
+name: Serialize and Deserialize Binary Tree
+category: trees
+difficulty: Hard
+level: 3
+recommended_minutes: 18
+target_complexity:
+  time: O(N)
+  space: O(N)
+function_signature: "from typing import Optional\nfrom drills.structures import TreeNode\n\
+  \nclass Codec:\n    def serialize(self, root: Optional[TreeNode]) -> str:\n    \
+  \    raise NotImplementedError\n\n    def deserialize(self, data: str) -> Optional[TreeNode]:\n\
+  \        raise NotImplementedError\n"
+starter_path: drills/trees/serialize_tree.py
+test_path: tests/trees/test_serialize_tree.py
+reference_path: reference/trees/serialize_tree.py
+description: 'Implement Serialize and Deserialize Binary Tree in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(N)'
+hints:
+  1: Preorder with '#' sentinel for null nodes makes unique tree reconstruction straightforward.
+  2: Split comma-separated values and reconstruct recursively with index.
+  3: Time O(N) serialize, O(N) deserialize.
+  4: Space O(N).
+  5: See reference in reference/trees/serialize_tree.py.
+variants:
+- default

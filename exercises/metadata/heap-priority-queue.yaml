@@ -1,0 +1,31 @@
+id: heap-priority-queue
+name: Task Priority Queue with Removals
+category: heaps
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(log N)
+  space: O(N)
+function_signature: "import heapq\n\nclass TaskPriorityQueue:\n    def __init__(self):\n\
+  \        raise NotImplementedError\n\n    def add_task(self, task_name: str, priority:\
+  \ int) -> None:\n        raise NotImplementedError\n\n    def remove_task(self,\
+  \ task_name: str) -> None:\n        raise NotImplementedError\n\n    def pop_highest_priority(self)\
+  \ -> str:\n        raise NotImplementedError\n"
+starter_path: drills/heaps/priority_queue.py
+test_path: tests/heaps/test_priority_queue.py
+reference_path: reference/heaps/priority_queue.py
+description: 'Implement Task Priority Queue with Removals in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(N)'
+hints:
+  1: Maintain entry_finder dict mapping task -> mutable entry list [priority, task].
+  2: To remove, mark entry[-1] = REMOVED sentinel and delete from entry_finder.
+  3: Discard REMOVED entries lazily upon popping.
+  4: O(log N) amortized operations.
+  5: See reference in reference/heaps/priority_queue.py.
+variants:
+- default

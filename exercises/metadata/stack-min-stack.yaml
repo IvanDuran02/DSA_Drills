@@ -1,0 +1,32 @@
+id: stack-min-stack
+name: Min Stack
+category: stacks
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(1) all ops
+  space: O(N)
+function_signature: "class MinStack:\n    \"\"\"\n    Stack supporting push, pop,\
+  \ top, and retrieving minimum element in O(1) time.\n    \"\"\"\n    def __init__(self):\n\
+  \        raise NotImplementedError\n\n    def push(self, val: int) -> None:\n  \
+  \      raise NotImplementedError\n\n    def pop(self) -> None:\n        raise NotImplementedError\n\
+  \n    def top(self) -> int:\n        raise NotImplementedError\n\n    def get_min(self)\
+  \ -> int:\n        raise NotImplementedError\n"
+starter_path: drills/stacks/min_stack.py
+test_path: tests/stacks/test_min_stack.py
+reference_path: reference/stacks/min_stack.py
+description: 'Implement Min Stack in Python 3.14+.
+
+
+  Target Time: O(1) all ops
+
+  Target Space: O(N)'
+hints:
+  1: Use auxiliary min_stack tracking current minimums.
+  2: Push to min_stack if empty or val <= min_stack[-1].
+  3: Pop from min_stack if popped value == min_stack[-1].
+  4: All operations O(1).
+  5: See reference in reference/stacks/min_stack.py.
+variants:
+- default

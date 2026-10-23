@@ -1,0 +1,30 @@
+id: heap-top-k-frequent
+name: Top K Frequent Elements
+category: heaps
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(N log K)
+  space: O(N + K)
+function_signature: "import heapq\nfrom collections import Counter\n\ndef top_k_frequent(nums:\
+  \ list[int], k: int) -> list[int]:\n    \"\"\"\n    Return the k most frequent elements\
+  \ in nums.\n    Target Time: O(N log K)\n    Target Space: O(N + K)\n    \"\"\"\n\
+  \    raise NotImplementedError\n"
+starter_path: drills/heaps/top_k_frequent.py
+test_path: tests/heaps/test_top_k_frequent.py
+reference_path: reference/heaps/top_k_frequent.py
+description: 'Implement Top K Frequent Elements in Python 3.14+.
+
+
+  Target Time: O(N log K)
+
+  Target Space: O(N + K)'
+hints:
+  1: Count frequencies with Counter(nums).
+  2: Maintain min-heap of (freq, num) tuples with max size k.
+  3: Pop when size exceeds k to retain k most frequent.
+  4: O(N log K) time.
+  5: See reference in reference/heaps/top_k_frequent.py.
+variants:
+- default

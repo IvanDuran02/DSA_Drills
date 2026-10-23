@@ -1,0 +1,31 @@
+id: tree-bfs-level
+name: Level-Order BFS Traversal
+category: trees
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(N)
+function_signature: "from typing import Optional\nfrom collections import deque\n\
+  from drills.structures import TreeNode\n\ndef level_order(root: Optional[TreeNode])\
+  \ -> list[list[int]]:\n    \"\"\"\n    Return level-order traversal of nodes level\
+  \ by level.\n    Target Time: O(N)\n    Target Space: O(N)\n    \"\"\"\n    raise\
+  \ NotImplementedError\n"
+starter_path: drills/trees/bfs_level.py
+test_path: tests/trees/test_bfs_level.py
+reference_path: reference/trees/bfs_level.py
+description: 'Implement Level-Order BFS Traversal in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(N)'
+hints:
+  1: len(queue) at start of loop gives count of nodes on current level.
+  2: Inner loop processes exact level_size nodes.
+  3: Deque gives O(1) pops.
+  4: O(N) space for bottom level.
+  5: See reference in reference/trees/bfs_level.py.
+variants:
+- default

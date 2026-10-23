@@ -1,0 +1,29 @@
+id: dp-house-robber
+name: House Robber
+category: dynamic_programming
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "def rob(nums: list[int]) -> int:\n    \"\"\"\n    Determine max\
+  \ money that can be robbed without alerting police (no two adjacent houses).\n \
+  \   Target Time: O(N)\n    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/house_robber.py
+test_path: tests/dynamic_programming/test_house_robber.py
+reference_path: reference/dynamic_programming/house_robber.py
+description: 'Implement House Robber in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: At house i, choose max(rob(i-1), rob(i-2) + nums[i]).
+  2: Keep two variables to track previous two max amounts.
+  3: O(N) time with O(1) space.
+  4: Handles empty list safely.
+  5: See reference in reference/dynamic_programming/house_robber.py.
+variants:
+- default

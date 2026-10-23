@@ -1,0 +1,30 @@
+id: graph-dijkstra
+name: Dijkstra's Algorithm
+category: graphs
+difficulty: Medium
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O((V + E) log V)
+  space: O(V)
+function_signature: "def dijkstra(n: int, edges: list[list[int]], start: int) -> dict[int,\
+  \ int]:\n    \"\"\"\n    Dijkstra shortest path algorithm. edges = [[u, v, weight],\
+  \ ...].\n    Target Time: O((V + E) log V)\n    Target Space: O(V)\n    \"\"\"\n\
+  \    raise NotImplementedError\n"
+starter_path: drills/graphs/dijkstra.py
+test_path: tests/graphs/test_dijkstra.py
+reference_path: reference/graphs/dijkstra.py
+description: 'Implement Dijkstra''s Algorithm in Python 3.14+.
+
+
+  Target Time: O((V + E) log V)
+
+  Target Space: O(V)'
+hints:
+  1: Min-heap of (distance_so_far, node).
+  2: Skip if distances[u] != -1.
+  3: Greedy choice property applies.
+  4: O((V + E) log V).
+  5: See reference in reference/graphs/dijkstra.py.
+variants:
+- default

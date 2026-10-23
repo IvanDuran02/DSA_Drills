@@ -1,0 +1,30 @@
+id: sliding-window-maximum
+name: Sliding Window Maximum (Monotonic Deque)
+category: sliding_window
+difficulty: Hard
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(N)
+  space: O(K)
+function_signature: "from collections import deque\n\ndef max_sliding_window(nums:\
+  \ list[int], k: int) -> list[int]:\n    \"\"\"\n    Find sliding window maximum\
+  \ of array nums with window size k.\n    Target Time: O(N)\n    Target Space: O(K)\n\
+  \    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/sliding_window/sliding_window_max.py
+test_path: tests/sliding_window/test_sliding_window_max.py
+reference_path: reference/sliding_window/sliding_window_max.py
+description: 'Implement Sliding Window Maximum (Monotonic Deque) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(K)'
+hints:
+  1: Store indices in deque with values in strictly decreasing order.
+  2: Pop indices from front when deq[0] < i - k + 1.
+  3: Pop indices from back when nums[deq[-1]] < current element.
+  4: Current window max is always nums[deq[0]].
+  5: See reference in reference/sliding_window/sliding_window_max.py.
+variants:
+- default

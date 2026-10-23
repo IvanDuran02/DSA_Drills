@@ -1,0 +1,30 @@
+id: binary-search-standard
+name: Standard Binary Search
+category: binary_search
+difficulty: Easy
+level: 1
+recommended_minutes: 6
+target_complexity:
+  time: O(log N)
+  space: O(1)
+function_signature: "def binary_search(nums: list[int], target: int) -> int:\n   \
+  \ \"\"\"\n    Search for target in sorted array nums. Return index or -1 if not\
+  \ found.\n    Target Time: O(log N)\n    Target Space: O(1)\n    \"\"\"\n    raise\
+  \ NotImplementedError\n"
+starter_path: drills/binary_search/bs_standard.py
+test_path: tests/binary_search/test_bs_standard.py
+reference_path: reference/binary_search/bs_standard.py
+description: 'Implement Standard Binary Search in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(1)'
+hints:
+  1: Maintain inclusive search window [left, right].
+  2: mid = (left + right) // 2.
+  3: 'Shrink window appropriately: left = mid + 1 or right = mid - 1.'
+  4: O(log N) time.
+  5: See reference in reference/binary_search/bs_standard.py.
+variants:
+- default

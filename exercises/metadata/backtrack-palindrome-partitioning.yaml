@@ -1,0 +1,29 @@
+id: backtrack-palindrome-partitioning
+name: Palindrome Partitioning
+category: backtracking
+difficulty: Medium
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(N * 2^N)
+  space: O(N)
+function_signature: "def partition(s: str) -> list[list[str]]:\n    \"\"\"\n    Partition\
+  \ string s such that every substring in the partition is a palindrome.\n    Target\
+  \ Time: O(N * 2^N)\n    Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/backtracking/palindrome_partition.py
+test_path: tests/backtracking/test_palindrome_partition.py
+reference_path: reference/backtracking/palindrome_partition.py
+description: 'Implement Palindrome Partitioning in Python 3.14+.
+
+
+  Target Time: O(N * 2^N)
+
+  Target Space: O(N)'
+hints:
+  1: Try every prefix s[start:end].
+  2: If prefix is palindrome, append to path and recurse with end.
+  3: Base case is start == len(s).
+  4: O(N * 2^N) time.
+  5: See reference in reference/backtracking/palindrome_partition.py.
+variants:
+- default

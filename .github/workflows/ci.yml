@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    name: Build & Verify Algorithm Drills
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.24'
+
+      - name: Set up Python 3.14
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+
+      - name: Install Python dependencies
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install --upgrade pip
+          pip install pytest hypothesis pytest-timeout pyyaml
+
+      - name: Run Go Framework Tests
+        run: |
+          go test -v ./...
+
+      - name: Build Native Drills Binary
+        run: |
+          make build
+
+      - name: Run Drills Doctor
+        run: |
+          ./bin/drills doctor
+
+      - name: Run Reference Implementation Tests (88 drills)
+        run: |
+          ./bin/drills test --all --target reference
+
+      - name: Verify Student Implementations are Unimplemented
+        run: |
+          ./bin/drills test graph-bfs

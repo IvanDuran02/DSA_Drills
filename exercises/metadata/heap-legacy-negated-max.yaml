@@ -1,0 +1,32 @@
+id: heap-legacy-negated-max
+name: Legacy Negated-Value Max-Heap Pattern
+category: heaps
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(log N)
+  space: O(N)
+function_signature: "import heapq\n\nclass LegacyMaxHeap:\n    \"\"\"\n    Max-heap\
+  \ implemented using value negation for Python < 3.14 compatibility.\n    \"\"\"\n\
+  \    def __init__(self):\n        self.heap: list[int] = []\n\n    def push(self,\
+  \ val: int) -> None:\n        raise NotImplementedError\n\n    def pop(self) ->\
+  \ int:\n        raise NotImplementedError\n\n    def peek(self) -> int:\n      \
+  \  raise NotImplementedError\n"
+starter_path: drills/heaps/legacy_negated_heap.py
+test_path: tests/heaps/test_legacy_negated_heap.py
+reference_path: reference/heaps/legacy_negated_heap.py
+description: 'Implement Legacy Negated-Value Max-Heap Pattern in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(N)'
+hints:
+  1: Store -val in standard min-heap.
+  2: 'Negate again upon popping: -heappop().'
+  3: Legacy pattern used prior to Python 3.14 native max-heap APIs.
+  4: O(log N) operations.
+  5: See reference in reference/heaps/legacy_negated_heap.py.
+variants:
+- default

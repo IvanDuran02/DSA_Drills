@@ -1,0 +1,30 @@
+id: tree-inorder-rec
+name: Recursive Inorder Traversal
+category: trees
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(H)
+function_signature: "from typing import Optional\nfrom drills.structures import TreeNode\n\
+  \ndef inorder_traversal(root: Optional[TreeNode]) -> list[int]:\n    \"\"\"\n  \
+  \  Return inorder traversal of binary tree: Left -> Root -> Right.\n    Target Time:\
+  \ O(N)\n    Target Space: O(H)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/trees/inorder_rec.py
+test_path: tests/trees/test_inorder_rec.py
+reference_path: reference/trees/inorder_rec.py
+description: 'Implement Recursive Inorder Traversal in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(H)'
+hints:
+  1: Inorder produces sorted order for BSTs.
+  2: Left, then node, then right.
+  3: Time is O(N).
+  4: Space is O(H).
+  5: See reference in reference/trees/inorder_rec.py.
+variants:
+- default

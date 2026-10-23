@@ -1,0 +1,29 @@
+id: backtrack-combinations
+name: Combinations (n choose k)
+category: backtracking
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(k * C(n, k))
+  space: O(k)
+function_signature: "def combine(n: int, k: int) -> list[list[int]]:\n    \"\"\"\n\
+  \    Return all combinations of k numbers chosen from range 1 to n.\n    Target\
+  \ Time: O(k * C(n, k))\n    Target Space: O(k)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/backtracking/combinations.py
+test_path: tests/backtracking/test_combinations.py
+reference_path: reference/backtracking/combinations.py
+description: 'Implement Combinations (n choose k) in Python 3.14+.
+
+
+  Target Time: O(k * C(n, k))
+
+  Target Space: O(k)'
+hints:
+  1: 'Base case: len(comb) == k.'
+  2: Recurse from start index to n.
+  3: Prune loop range when remaining elements cannot satisfy needed count.
+  4: Space is O(k).
+  5: See reference in reference/backtracking/combinations.py.
+variants:
+- default

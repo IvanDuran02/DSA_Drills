@@ -1,0 +1,29 @@
+id: stack-valid-parentheses
+name: Valid Parentheses
+category: stacks
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(N)
+function_signature: "def is_valid(s: str) -> bool:\n    \"\"\"\n    Determine if string\
+  \ s with characters '()[]{}' has valid brackets.\n    Target Time: O(N)\n    Target\
+  \ Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/stacks/valid_parentheses.py
+test_path: tests/stacks/test_valid_parentheses.py
+reference_path: reference/stacks/valid_parentheses.py
+description: 'Implement Valid Parentheses in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(N)'
+hints:
+  1: Push opening brackets onto stack.
+  2: When closing bracket encountered, pop top and verify match.
+  3: Check len(stack) == 0 at the end.
+  4: O(N) time and O(N) space.
+  5: See reference in reference/stacks/valid_parentheses.py.
+variants:
+- default

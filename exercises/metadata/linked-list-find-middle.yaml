@@ -1,0 +1,30 @@
+id: linked-list-find-middle
+name: Middle of the Linked List
+category: linked_lists
+difficulty: Easy
+level: 1
+recommended_minutes: 6
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "from typing import Optional\nfrom drills.structures import ListNode\n\
+  \ndef middle_node(head: Optional[ListNode]) -> Optional[ListNode]:\n    \"\"\"\n\
+  \    Return middle node of linked list (second middle if two middle nodes).\n  \
+  \  Target Time: O(N)\n    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/linked_lists/middle_node.py
+test_path: tests/linked_lists/test_middle_node.py
+reference_path: reference/linked_lists/middle_node.py
+description: 'Implement Middle of the Linked List in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: Slow advances 1 step, fast advances 2 steps.
+  2: When fast reaches end, slow is at the middle.
+  3: O(N) time with single pass.
+  4: O(1) space.
+  5: See reference in reference/linked_lists/middle_node.py.
+variants:
+- default

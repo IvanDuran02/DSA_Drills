@@ -1,0 +1,29 @@
+id: dp-bottom-up-tab
+name: Partition Equal Subset Sum (Tabulation)
+category: dynamic_programming
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(N * Sum)
+  space: O(Sum)
+function_signature: "def can_partition(nums: list[int]) -> bool:\n    \"\"\"\n   \
+  \ Determine if array can be partitioned into two subsets with equal sums.\n    Target\
+  \ Time: O(N * Sum)\n    Target Space: O(Sum)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/partition_subset_sum.py
+test_path: tests/dynamic_programming/test_partition_subset_sum.py
+reference_path: reference/dynamic_programming/partition_subset_sum.py
+description: 'Implement Partition Equal Subset Sum (Tabulation) in Python 3.14+.
+
+
+  Target Time: O(N * Sum)
+
+  Target Space: O(Sum)'
+hints:
+  1: Sum must be even, target = total // 2.
+  2: Boolean array dp where dp[s] indicates if sum s is achievable.
+  3: Iterate s backwards from target down to x.
+  4: O(target) auxiliary space.
+  5: See reference in reference/dynamic_programming/partition_subset_sum.py.
+variants:
+- default

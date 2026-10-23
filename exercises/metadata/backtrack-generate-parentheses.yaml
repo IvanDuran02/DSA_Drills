@@ -1,0 +1,30 @@
+id: backtrack-generate-parentheses
+name: Generate Valid Parentheses
+category: backtracking
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(4^N / sqrt(N))
+  space: O(N)
+function_signature: "def generate_parenthesis(n: int) -> list[str]:\n    \"\"\"\n\
+  \    Generate all combinations of well-formed parentheses of length 2n.\n    Target\
+  \ Time: O(4^N / sqrt(N)) (Catalan number)\n    Target Space: O(N)\n    \"\"\"\n\
+  \    raise NotImplementedError\n"
+starter_path: drills/backtracking/generate_parentheses.py
+test_path: tests/backtracking/test_generate_parentheses.py
+reference_path: reference/backtracking/generate_parentheses.py
+description: 'Implement Generate Valid Parentheses in Python 3.14+.
+
+
+  Target Time: O(4^N / sqrt(N))
+
+  Target Space: O(N)'
+hints:
+  1: Can add '(' if open_count < n.
+  2: Can add ')' if close_count < open_count.
+  3: Base case len(curr) == 2 * n.
+  4: 'Catalan number count: C_n = (2n)! / ((n+1)! * n!).'
+  5: See reference in reference/backtracking/generate_parentheses.py.
+variants:
+- default

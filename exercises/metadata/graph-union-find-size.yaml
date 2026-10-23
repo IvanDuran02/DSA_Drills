@@ -1,0 +1,31 @@
+id: graph-union-find-size
+name: Union-Find with Union by Size/Rank
+category: graphs
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(alpha(N))
+  space: O(N)
+function_signature: "class UnionFindSize:\n    def __init__(self, size: int):\n  \
+  \      raise NotImplementedError\n\n    def find(self, x: int) -> int:\n       \
+  \ raise NotImplementedError\n\n    def union(self, x: int, y: int) -> bool:\n  \
+  \      raise NotImplementedError\n\n    def get_component_size(self, x: int) ->\
+  \ int:\n        raise NotImplementedError\n"
+starter_path: drills/graphs/union_find_size.py
+test_path: tests/graphs/test_union_find_size.py
+reference_path: reference/graphs/union_find_size.py
+description: 'Implement Union-Find with Union by Size/Rank in Python 3.14+.
+
+
+  Target Time: O(alpha(N))
+
+  Target Space: O(N)'
+hints:
+  1: Attach smaller tree to larger tree.
+  2: Update root size by adding smaller size.
+  3: Decrement num_components.
+  4: O(alpha(N)) optimal bounds.
+  5: See reference in reference/graphs/union_find_size.py.
+variants:
+- default

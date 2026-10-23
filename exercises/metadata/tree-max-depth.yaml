@@ -1,0 +1,30 @@
+id: tree-max-depth
+name: Maximum Depth of Binary Tree
+category: trees
+difficulty: Easy
+level: 1
+recommended_minutes: 6
+target_complexity:
+  time: O(N)
+  space: O(H)
+function_signature: "from typing import Optional\nfrom drills.structures import TreeNode\n\
+  \ndef max_depth(root: Optional[TreeNode]) -> int:\n    \"\"\"\n    Find maximum\
+  \ depth (number of nodes along longest path from root to leaf).\n    Target Time:\
+  \ O(N)\n    Target Space: O(H)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/trees/max_depth.py
+test_path: tests/trees/test_max_depth.py
+reference_path: reference/trees/max_depth.py
+description: 'Implement Maximum Depth of Binary Tree in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(H)'
+hints:
+  1: 'Base case: depth of None is 0.'
+  2: 1 + max(left_depth, right_depth).
+  3: O(N) time.
+  4: O(H) space.
+  5: See reference in reference/trees/max_depth.py.
+variants:
+- default

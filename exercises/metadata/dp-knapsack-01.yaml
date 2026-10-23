@@ -1,0 +1,30 @@
+id: dp-knapsack-01
+name: 0/1 Knapsack Problem
+category: dynamic_programming
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(N * W)
+  space: O(W)
+function_signature: "def knapsack_01(weights: list[int], values: list[int], capacity:\
+  \ int) -> int:\n    \"\"\"\n    Find max value achievable with given capacity where\
+  \ each item can be taken at most once.\n    Target Time: O(N * W)\n    Target Space:\
+  \ O(W)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/knapsack_01.py
+test_path: tests/dynamic_programming/test_knapsack_01.py
+reference_path: reference/dynamic_programming/knapsack_01.py
+description: 'Implement 0/1 Knapsack Problem in Python 3.14+.
+
+
+  Target Time: O(N * W)
+
+  Target Space: O(W)'
+hints:
+  1: Iterate capacity backwards to avoid using same item multiple times in 1D array.
+  2: dp[cap] = max(dp[cap], dp[cap - w] + v).
+  3: Range goes from capacity down to w.
+  4: O(N * W) time, O(W) space.
+  5: See reference in reference/dynamic_programming/knapsack_01.py.
+variants:
+- default

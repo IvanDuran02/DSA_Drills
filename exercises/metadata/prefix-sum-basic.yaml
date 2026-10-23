@@ -1,0 +1,29 @@
+id: prefix-sum-basic
+name: Range Sum Query (Prefix Sums)
+category: sliding_window
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N) build, O(1) query
+  space: O(N)
+function_signature: "class NumArray:\n    \"\"\"\n    Range Sum Query using prefix\
+  \ sums.\n    \"\"\"\n    def __init__(self, nums: list[int]):\n        raise NotImplementedError\n\
+  \n    def sum_range(self, left: int, right: int) -> int:\n        raise NotImplementedError\n"
+starter_path: drills/sliding_window/prefix_sum_basic.py
+test_path: tests/sliding_window/test_prefix_sum_basic.py
+reference_path: reference/sliding_window/prefix_sum_basic.py
+description: 'Implement Range Sum Query (Prefix Sums) in Python 3.14+.
+
+
+  Target Time: O(N) build, O(1) query
+
+  Target Space: O(N)'
+hints:
+  1: Build prefix sum array with size N + 1 where prefix[0] = 0.
+  2: sum_range(left, right) is prefix[right + 1] - prefix[left].
+  3: O(1) query time.
+  4: O(N) space.
+  5: See reference in reference/sliding_window/prefix_sum_basic.py.
+variants:
+- default

@@ -1,0 +1,31 @@
+id: two-pointers-fast-slow
+name: Linked List Cycle Detection (Floyd's Algorithm)
+category: sliding_window
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "from typing import Optional\nfrom drills.structures import ListNode\n\
+  \ndef has_cycle(head: Optional[ListNode]) -> bool:\n    \"\"\"\n    Determine if\
+  \ linked list has a cycle using fast and slow pointers.\n    Target Time: O(N)\n\
+  \    Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/sliding_window/fast_slow_pointers.py
+test_path: tests/sliding_window/test_fast_slow_pointers.py
+reference_path: reference/sliding_window/fast_slow_pointers.py
+description: 'Implement Linked List Cycle Detection (Floyd''s Algorithm) in Python
+  3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: Slow moves 1 step, fast moves 2 steps.
+  2: If there is a cycle, fast will eventually overtake and meet slow.
+  3: If fast reaches None, there is no cycle.
+  4: O(1) extra space.
+  5: See reference in reference/sliding_window/fast_slow_pointers.py.
+variants:
+- default

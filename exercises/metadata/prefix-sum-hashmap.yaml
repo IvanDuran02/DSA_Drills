@@ -1,0 +1,29 @@
+id: prefix-sum-hashmap
+name: Subarray Sum Equals K (Prefix Sum + Hashmap)
+category: sliding_window
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(N)
+function_signature: "def subarray_sum(nums: list[int], k: int) -> int:\n    \"\"\"\
+  \n    Find total number of subarrays whose sum equals k.\n    Target Time: O(N)\n\
+  \    Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/sliding_window/prefix_sum_hashmap.py
+test_path: tests/sliding_window/test_prefix_sum_hashmap.py
+reference_path: reference/sliding_window/prefix_sum_hashmap.py
+description: 'Implement Subarray Sum Equals K (Prefix Sum + Hashmap) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(N)'
+hints:
+  1: prefix[j] - prefix[i] == k <=> prefix[i] == prefix[j] - k.
+  2: Store frequency of observed prefix sums in hashmap.
+  3: 'Initialize hashmap with {0: 1} to handle prefix sum exactly equal to k.'
+  4: O(N) time with one pass.
+  5: See reference in reference/sliding_window/prefix_sum_hashmap.py.
+variants:
+- default

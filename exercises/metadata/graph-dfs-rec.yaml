@@ -1,0 +1,30 @@
+id: graph-dfs-rec
+name: Recursive DFS Traversal
+category: graphs
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "def dfs_recursive(adj: dict[int, list[int]], start: int) -> list[int]:\n\
+  \    \"\"\"\n    Perform recursive Depth First Search traversal starting from vertex\
+  \ 'start'.\n    Target Time: O(V + E)\n    Target Space: O(V)\n    \"\"\"\n    raise\
+  \ NotImplementedError\n"
+starter_path: drills/graphs/dfs_recursive.py
+test_path: tests/graphs/test_dfs_recursive.py
+reference_path: reference/graphs/dfs_recursive.py
+description: 'Implement Recursive DFS Traversal in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: Ensure visited set prevents infinite recursion on cycles.
+  2: Helper function dfs(u) should add u to visited, append to order, then recurse.
+  3: Call dfs(start) only if start exists in graph.
+  4: Recursive call stack consumes O(V) auxiliary space in the worst case.
+  5: See reference implementation in reference/graphs/dfs_recursive.py.
+variants:
+- default

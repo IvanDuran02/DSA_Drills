@@ -1,0 +1,29 @@
+id: graph-dfs-iter
+name: Iterative DFS Traversal
+category: graphs
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "def dfs_iterative(adj: dict[int, list[int]], start: int) -> list[int]:\n\
+  \    \"\"\"\n    Perform iterative Depth First Search using an explicit stack.\n\
+  \    Target Time: O(V + E)\n    Target Space: O(V)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/dfs_iterative.py
+test_path: tests/graphs/test_dfs_iterative.py
+reference_path: reference/graphs/dfs_iterative.py
+description: 'Implement Iterative DFS Traversal in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: Mark nodes visited when popping from stack, not when pushing.
+  2: Reverse neighbor order when pushing to visit left-to-right.
+  3: An explicit stack avoids Python recursion limits.
+  4: Time is O(V + E) since each vertex is processed once.
+  5: See reference implementation in reference/graphs/dfs_iterative.py.
+variants:
+- default

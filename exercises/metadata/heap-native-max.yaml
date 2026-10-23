@@ -1,0 +1,32 @@
+id: heap-native-max
+name: Native Python 3.14 Max-Heap Operations
+category: heaps
+difficulty: Easy
+level: 1
+recommended_minutes: 8
+target_complexity:
+  time: O(log N)
+  space: O(N)
+function_signature: "import heapq\n\nclass MaxHeapPractice:\n    \"\"\"\n    Max-heap\
+  \ using Python 3.14 native heapq max-heap functions:\n    heapq.heappush_max, heapq.heappop_max\n\
+  \    \"\"\"\n    def __init__(self):\n        self.heap: list[int] = []\n\n    def\
+  \ push(self, val: int) -> None:\n        raise NotImplementedError\n\n    def pop(self)\
+  \ -> int:\n        raise NotImplementedError\n\n    def peek(self) -> int:\n   \
+  \     raise NotImplementedError\n"
+starter_path: drills/heaps/native_max_heap.py
+test_path: tests/heaps/test_native_max_heap.py
+reference_path: reference/heaps/native_max_heap.py
+description: 'Implement Native Python 3.14 Max-Heap Operations in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(N)'
+hints:
+  1: Python 3.14 native max-heap uses heapq.heappush_max(self.heap, val).
+  2: Pop max element with heapq.heappop_max(self.heap).
+  3: Largest element resides at index 0.
+  4: No negative number negation needed in Python 3.14+.
+  5: See reference in reference/heaps/native_max_heap.py.
+variants:
+- default

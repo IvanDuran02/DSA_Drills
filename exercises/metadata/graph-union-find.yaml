@@ -1,0 +1,31 @@
+id: graph-union-find
+name: Union-Find with Path Compression
+category: graphs
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(alpha(N))
+  space: O(N)
+function_signature: "class UnionFind:\n    def __init__(self, size: int):\n      \
+  \  raise NotImplementedError\n\n    def find(self, x: int) -> int:\n        raise\
+  \ NotImplementedError\n\n    def union(self, x: int, y: int) -> bool:\n        raise\
+  \ NotImplementedError\n\n    def connected(self, x: int, y: int) -> bool:\n    \
+  \    raise NotImplementedError\n"
+starter_path: drills/graphs/union_find.py
+test_path: tests/graphs/test_union_find.py
+reference_path: reference/graphs/union_find.py
+description: 'Implement Union-Find with Path Compression in Python 3.14+.
+
+
+  Target Time: O(alpha(N))
+
+  Target Space: O(N)'
+hints:
+  1: 'Path compression: self.parent[x] = self.find(self.parent[x]).'
+  2: Union connects root of x to root of y.
+  3: Returns False if roots are equal.
+  4: Nearly O(1) amortized.
+  5: See reference in reference/graphs/union_find.py.
+variants:
+- default

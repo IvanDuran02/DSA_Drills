@@ -1,0 +1,29 @@
+id: dp-fibonacci-memo
+name: Fibonacci (Top-Down Memoization)
+category: dynamic_programming
+difficulty: Easy
+level: 1
+recommended_minutes: 6
+target_complexity:
+  time: O(N)
+  space: O(N)
+function_signature: "def fib_memo(n: int) -> int:\n    \"\"\"\n    Compute nth Fibonacci\
+  \ number using top-down recursion with memoization.\n    Target Time: O(N)\n   \
+  \ Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/fib_memo.py
+test_path: tests/dynamic_programming/test_fib_memo.py
+reference_path: reference/dynamic_programming/fib_memo.py
+description: 'Implement Fibonacci (Top-Down Memoization) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(N)'
+hints:
+  1: Cache results in dict or array.
+  2: 'Base cases: 0 -> 0, 1 -> 1.'
+  3: helper(k - 1) + helper(k - 2).
+  4: Reduces 2^N tree to linear N evaluations.
+  5: See reference in reference/dynamic_programming/fib_memo.py.
+variants:
+- default

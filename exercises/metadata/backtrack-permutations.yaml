@@ -1,0 +1,29 @@
+id: backtrack-permutations
+name: Permutations
+category: backtracking
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N * N!)
+  space: O(N)
+function_signature: "def permute(nums: list[int]) -> list[list[int]]:\n    \"\"\"\n\
+  \    Return all possible permutations of array of distinct integers.\n    Target\
+  \ Time: O(N * N!)\n    Target Space: O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/backtracking/permutations.py
+test_path: tests/backtracking/test_permutations.py
+reference_path: reference/backtracking/permutations.py
+description: 'Implement Permutations in Python 3.14+.
+
+
+  Target Time: O(N * N!)
+
+  Target Space: O(N)'
+hints:
+  1: Maintain boolean array 'used' of length N.
+  2: 'Base case: len(curr) == len(nums).'
+  3: Iterate all unused items, recurse, then unmark used and pop.
+  4: Total permutations N!.
+  5: See reference in reference/backtracking/permutations.py.
+variants:
+- default

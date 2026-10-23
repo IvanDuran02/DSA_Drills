@@ -1,0 +1,29 @@
+id: two-pointers-three-sum
+name: 3Sum (Zero Sum Triplets)
+category: sliding_window
+difficulty: Medium
+level: 2
+recommended_minutes: 12
+target_complexity:
+  time: O(N^2)
+  space: O(1) extra
+function_signature: "def three_sum(nums: list[int]) -> list[list[int]]:\n    \"\"\"\
+  \n    Find all unique triplets in nums that sum to 0.\n    Target Time: O(N^2)\n\
+  \    Target Space: O(1) auxiliary\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/sliding_window/three_sum.py
+test_path: tests/sliding_window/test_three_sum.py
+reference_path: reference/sliding_window/three_sum.py
+description: 'Implement 3Sum (Zero Sum Triplets) in Python 3.14+.
+
+
+  Target Time: O(N^2)
+
+  Target Space: O(1) extra'
+hints:
+  1: Sort nums first.
+  2: Fix nums[i] and use two pointers for remaining two elements.
+  3: Skip duplicates for i, left, and right pointers.
+  4: O(N^2) time.
+  5: See reference in reference/sliding_window/three_sum.py.
+variants:
+- default

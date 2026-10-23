@@ -1,0 +1,30 @@
+id: dp-take-or-skip
+name: Take or Skip Recursion (Subset Sum)
+category: dynamic_programming
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N * target)
+  space: O(N * target)
+function_signature: "def can_partition_sum(nums: list[int], target: int) -> bool:\n\
+  \    \"\"\"\n    Determine whether there exists a subset of nums summing exactly\
+  \ to target.\n    Target Time: O(N * target)\n    Target Space: O(N * target)\n\
+  \    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/take_or_skip.py
+test_path: tests/dynamic_programming/test_take_or_skip.py
+reference_path: reference/dynamic_programming/take_or_skip.py
+description: 'Implement Take or Skip Recursion (Subset Sum) in Python 3.14+.
+
+
+  Target Time: O(N * target)
+
+  Target Space: O(N * target)'
+hints:
+  1: At each element i, branch into take (remain - nums[i]) or skip (remain).
+  2: Memoize (i, remain).
+  3: Base case remain == 0 returns True.
+  4: Base case i == len(nums) returns False.
+  5: See reference in reference/dynamic_programming/take_or_skip.py.
+variants:
+- default

@@ -1,0 +1,31 @@
+id: linked-list-lru-cache
+name: LRU Cache (Doubly Linked List + Hashmap)
+category: linked_lists
+difficulty: Medium
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(1) get & put
+  space: O(capacity)
+function_signature: "class LRUCache:\n    \"\"\"\n    Least Recently Used (LRU) Cache\
+  \ supporting get and put in O(1) time.\n    \"\"\"\n    def __init__(self, capacity:\
+  \ int):\n        raise NotImplementedError\n\n    def get(self, key: int) -> int:\n\
+  \        raise NotImplementedError\n\n    def put(self, key: int, value: int) ->\
+  \ None:\n        raise NotImplementedError\n"
+starter_path: drills/linked_lists/lru_cache.py
+test_path: tests/linked_lists/test_lru_cache.py
+reference_path: reference/linked_lists/lru_cache.py
+description: 'Implement LRU Cache (Doubly Linked List + Hashmap) in Python 3.14+.
+
+
+  Target Time: O(1) get & put
+
+  Target Space: O(capacity)'
+hints:
+  1: Use doubly linked list with dummy head and tail nodes.
+  2: Hashmap maps key -> node.
+  3: Move accessed nodes to front of list (most recent).
+  4: Evict node right before tail when capacity exceeded.
+  5: See reference in reference/linked_lists/lru_cache.py.
+variants:
+- default

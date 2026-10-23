@@ -1,0 +1,30 @@
+id: dp-2d-memo
+name: Target Sum (2D Memoization)
+category: dynamic_programming
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(N * Sum)
+  space: O(N * Sum)
+function_signature: "def find_target_sum_ways(nums: list[int], target: int) -> int:\n\
+  \    \"\"\"\n    Assign '+' or '-' signs to each integer in nums such that the sum\
+  \ equals target.\n    Target Time: O(N * Sum)\n    Target Space: O(N * Sum)\n  \
+  \  \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/target_sum_memo.py
+test_path: tests/dynamic_programming/test_target_sum_memo.py
+reference_path: reference/dynamic_programming/target_sum_memo.py
+description: 'Implement Target Sum (2D Memoization) in Python 3.14+.
+
+
+  Target Time: O(N * Sum)
+
+  Target Space: O(N * Sum)'
+hints:
+  1: State tuple is (index, current_sum).
+  2: Recurse adding nums[i] and subtracting nums[i].
+  3: Memoize results in dictionary.
+  4: 'Base case: i == len(nums) checks current_sum == target.'
+  5: See reference in reference/dynamic_programming/target_sum_memo.py.
+variants:
+- default

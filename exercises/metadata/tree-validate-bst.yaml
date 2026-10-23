@@ -1,0 +1,31 @@
+id: tree-validate-bst
+name: Validate Binary Search Tree
+category: trees
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(H)
+function_signature: "from typing import Optional\nfrom drills.structures import TreeNode\n\
+  \ndef is_valid_bst(root: Optional[TreeNode]) -> bool:\n    \"\"\"\n    Determine\
+  \ if binary tree is a valid Binary Search Tree.\n    Target Time: O(N)\n    Target\
+  \ Space: O(H)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/trees/validate_bst.py
+test_path: tests/trees/test_validate_bst.py
+reference_path: reference/trees/validate_bst.py
+description: 'Implement Validate Binary Search Tree in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(H)'
+hints:
+  1: Checking node.left.val < node.val is NOT sufficient; need entire range (low,
+    high).
+  2: Left child inherits (low, node.val).
+  3: Right child inherits (node.val, high).
+  4: O(N) time, O(H) space.
+  5: See reference in reference/trees/validate_bst.py.
+variants:
+- default

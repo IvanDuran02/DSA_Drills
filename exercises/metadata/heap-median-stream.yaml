@@ -1,0 +1,33 @@
+id: heap-median-stream
+name: Find Median from Data Stream (Two Heaps)
+category: heaps
+difficulty: Hard
+level: 3
+recommended_minutes: 15
+target_complexity:
+  time: O(log N) add, O(1) find
+  space: O(N)
+function_signature: "import heapq\n\nclass MedianFinder:\n    \"\"\"\n    Find median\
+  \ from streaming numbers using Python 3.14 native max-heap for lower half\n    and\
+  \ standard min-heap for upper half.\n    \"\"\"\n    def __init__(self):\n     \
+  \   raise NotImplementedError\n\n    def add_num(self, num: int) -> None:\n    \
+  \    raise NotImplementedError\n\n    def find_median(self) -> float:\n        raise\
+  \ NotImplementedError\n"
+starter_path: drills/heaps/median_stream.py
+test_path: tests/heaps/test_median_stream.py
+reference_path: reference/heaps/median_stream.py
+description: 'Implement Find Median from Data Stream (Two Heaps) in Python 3.14+.
+
+
+  Target Time: O(log N) add, O(1) find
+
+  Target Space: O(N)'
+hints:
+  1: Use Python 3.14 native heapq.heappush_max / heappop_max for the lower half.
+  2: Use standard heapq min-heap for the upper half.
+  3: Balance sizes such that len(max_heap) == len(min_heap) or len(max_heap) == len(min_heap)
+    + 1.
+  4: add_num runs in O(log N), find_median runs in O(1).
+  5: See reference in reference/heaps/median_stream.py.
+variants:
+- default

@@ -1,0 +1,29 @@
+id: graph-bipartite
+name: Bipartite Graph Detection
+category: graphs
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(V + E)
+  space: O(V)
+function_signature: "def is_bipartite(graph: list[list[int]]) -> bool:\n    \"\"\"\
+  \n    Determine if an undirected graph is bipartite (2-colorable).\n    Target Time:\
+  \ O(V + E)\n    Target Space: O(V)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/graphs/bipartite.py
+test_path: tests/graphs/test_bipartite.py
+reference_path: reference/graphs/bipartite.py
+description: 'Implement Bipartite Graph Detection in Python 3.14+.
+
+
+  Target Time: O(V + E)
+
+  Target Space: O(V)'
+hints:
+  1: Try 2-coloring with 0 and 1.
+  2: If adjacent has same color, not bipartite.
+  3: Handle disconnected components.
+  4: O(V + E) time.
+  5: See reference in reference/graphs/bipartite.py.
+variants:
+- default

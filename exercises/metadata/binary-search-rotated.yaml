@@ -1,0 +1,30 @@
+id: binary-search-rotated
+name: Search in Rotated Sorted Array
+category: binary_search
+difficulty: Medium
+level: 3
+recommended_minutes: 12
+target_complexity:
+  time: O(log N)
+  space: O(1)
+function_signature: "def search_rotated(nums: list[int], target: int) -> int:\n  \
+  \  \"\"\"\n    Search in rotated sorted array of distinct elements. Return index\
+  \ or -1.\n    Target Time: O(log N)\n    Target Space: O(1)\n    \"\"\"\n    raise\
+  \ NotImplementedError\n"
+starter_path: drills/binary_search/bs_rotated.py
+test_path: tests/binary_search/test_bs_rotated.py
+reference_path: reference/binary_search/bs_rotated.py
+description: 'Implement Search in Rotated Sorted Array in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(1)'
+hints:
+  1: At least one half [left, mid] or [mid, right] is always normally sorted.
+  2: Determine which half is sorted using nums[l] <= nums[mid].
+  3: Check if target falls within the sorted half's boundaries.
+  4: O(log N) time.
+  5: See reference in reference/binary_search/bs_rotated.py.
+variants:
+- default

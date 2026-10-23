@@ -1,0 +1,29 @@
+id: dp-fibonacci-tab
+name: Fibonacci (Bottom-Up Tabulation)
+category: dynamic_programming
+difficulty: Easy
+level: 1
+recommended_minutes: 6
+target_complexity:
+  time: O(N)
+  space: O(1)
+function_signature: "def fib_tab(n: int) -> int:\n    \"\"\"\n    Compute nth Fibonacci\
+  \ number using bottom-up iteration with O(1) space.\n    Target Time: O(N)\n   \
+  \ Target Space: O(1)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/dynamic_programming/fib_tab.py
+test_path: tests/dynamic_programming/test_fib_tab.py
+reference_path: reference/dynamic_programming/fib_tab.py
+description: 'Implement Fibonacci (Bottom-Up Tabulation) in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(1)'
+hints:
+  1: Iterate from 2 up to n.
+  2: 'Keep two variables: prev and curr.'
+  3: Space complexity is O(1).
+  4: Time complexity is O(N).
+  5: See reference in reference/dynamic_programming/fib_tab.py.
+variants:
+- default

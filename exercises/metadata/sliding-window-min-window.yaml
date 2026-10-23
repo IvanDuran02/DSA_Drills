@@ -1,0 +1,30 @@
+id: sliding-window-min-window
+name: Minimum Window Substring
+category: sliding_window
+difficulty: Hard
+level: 3
+recommended_minutes: 18
+target_complexity:
+  time: O(M + N)
+  space: O(Sigma)
+function_signature: "def min_window(s: str, t: str) -> str:\n    \"\"\"\n    Find\
+  \ minimum window in s which contains all characters in t.\n    Return empty string\
+  \ if no such window exists.\n    Target Time: O(M + N)\n    Target Space: O(Sigma)\n\
+  \    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/sliding_window/min_window_substr.py
+test_path: tests/sliding_window/test_min_window_substr.py
+reference_path: reference/sliding_window/min_window_substr.py
+description: 'Implement Minimum Window Substring in Python 3.14+.
+
+
+  Target Time: O(M + N)
+
+  Target Space: O(Sigma)'
+hints:
+  1: Counter(t) defines character needs.
+  2: Track 'formed' match count to compare against len(need).
+  3: Shrink window from left while valid.
+  4: O(M + N) time.
+  5: See reference in reference/sliding_window/min_window_substr.py.
+variants:
+- default

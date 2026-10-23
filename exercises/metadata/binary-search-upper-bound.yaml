@@ -1,0 +1,30 @@
+id: binary-search-upper-bound
+name: Binary Search Upper Bound
+category: binary_search
+difficulty: Easy
+level: 2
+recommended_minutes: 8
+target_complexity:
+  time: O(log N)
+  space: O(1)
+function_signature: "def upper_bound(nums: list[int], target: int) -> int:\n    \"\
+  \"\"\n    Find first index i such that nums[i] > target. Return len(nums) if none\
+  \ > target.\n    Target Time: O(log N)\n    Target Space: O(1)\n    \"\"\"\n   \
+  \ raise NotImplementedError\n"
+starter_path: drills/binary_search/bs_upper_bound.py
+test_path: tests/binary_search/test_bs_upper_bound.py
+reference_path: reference/binary_search/bs_upper_bound.py
+description: 'Implement Binary Search Upper Bound in Python 3.14+.
+
+
+  Target Time: O(log N)
+
+  Target Space: O(1)'
+hints:
+  1: 'Condition is strictly greater: nums[mid] > target.'
+  2: right = mid when nums[mid] > target.
+  3: Returns insertion index after duplicates.
+  4: O(log N) time.
+  5: See reference in reference/binary_search/bs_upper_bound.py.
+variants:
+- default

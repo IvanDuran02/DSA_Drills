@@ -1,0 +1,30 @@
+id: stack-daily-temperatures
+name: Daily Temperatures
+category: stacks
+difficulty: Medium
+level: 2
+recommended_minutes: 10
+target_complexity:
+  time: O(N)
+  space: O(N)
+function_signature: "def daily_temperatures(temperatures: list[int]) -> list[int]:\n\
+  \    \"\"\"\n    For each day, find number of days until a warmer temperature.\n\
+  \    Return 0 if no future day is warmer.\n    Target Time: O(N)\n    Target Space:\
+  \ O(N)\n    \"\"\"\n    raise NotImplementedError\n"
+starter_path: drills/stacks/daily_temperatures.py
+test_path: tests/stacks/test_daily_temperatures.py
+reference_path: reference/stacks/daily_temperatures.py
+description: 'Implement Daily Temperatures in Python 3.14+.
+
+
+  Target Time: O(N)
+
+  Target Space: O(N)'
+hints:
+  1: Stack stores indices.
+  2: While current temp > temperatures[stack[-1]], pop and record distance i - prev_idx.
+  3: Stack maintains decreasing temperature indices.
+  4: O(N) time.
+  5: See reference in reference/stacks/daily_temperatures.py.
+variants:
+- default
