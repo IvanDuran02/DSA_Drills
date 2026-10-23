@@ -2,10 +2,31 @@ package config
 
 import (
 	"os"
+	"os/exec"
 	"path/filepath"
 
 	"gopkg.in/yaml.v3"
 )
+
+func ResolveEditor(configured string) string {
+	if configured != "" && configured != "auto" {
+		return configured
+	}
+	// Default to Neovim when available
+	if path, err := exec.LookPath("nvim"); err == nil {
+		return path
+	}
+	if env := os.Getenv("VISUAL"); env != "" {
+		return env
+	}
+	if env := os.Getenv("EDITOR"); env != "" {
+		return env
+	}
+	if path, err := exec.LookPath("vim"); err == nil {
+		return path
+	}
+	return "nano"
+}
 
 type Config struct {
 	Practice  PracticeConfig  `yaml:"practice"`
@@ -43,16 +64,11 @@ type PythonConfig struct {
 }
 
 func DefaultConfig() *Config {
-	editor := os.Getenv("EDITOR")
-	if editor == "" {
-		editor = "vim"
-	}
-
 	return &Config{
 		Practice: PracticeConfig{
 			DefaultSessionMinutes: 60,
 			DefaultHintLevel:      0,
-			Editor:                editor,
+			Editor:                "auto",
 			PreferredLanguage:     "python",
 		},
 		Reviews: ReviewsConfig{

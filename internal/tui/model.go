@@ -448,20 +448,7 @@ func (m *Model) SetStatus(msg string, isError bool) {
 }
 
 func (m *Model) launchEditor(ex *exercise.Exercise) tea.Cmd {
-	editor := m.Config.Practice.Editor
-	if editor == "" {
-		editor = os.Getenv("EDITOR")
-	}
-	if editor == "" {
-		if path, err := exec.LookPath("nvim"); err == nil {
-			editor = path
-		} else if path, err := exec.LookPath("vim"); err == nil {
-			editor = path
-		} else {
-			editor = "nano"
-		}
-	}
-
+	editor := config.ResolveEditor(m.Config.Practice.Editor)
 	filePath := filepath.Join(m.ProjectRoot, ex.StarterPath)
 
 	// Ensure starter file exists

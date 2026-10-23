@@ -7,6 +7,7 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+	"github.com/user/algorithm-drills/internal/config"
 	"github.com/user/algorithm-drills/internal/exercise"
 	"github.com/user/algorithm-drills/internal/mistakes"
 	"github.com/user/algorithm-drills/internal/ui"
@@ -586,10 +587,7 @@ func (m *Model) updateAnalytics(msg tea.KeyMsg) {
 // ----------------------------------------------------
 
 func (m *Model) renderSettings() string {
-	editor := m.Config.Practice.Editor
-	if editor == "" {
-		editor = "auto ($EDITOR / nvim)"
-	}
+	editor := config.ResolveEditor(m.Config.Practice.Editor)
 
 	content := fmt.Sprintf(
 		"%s\n%s\n"+

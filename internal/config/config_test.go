@@ -49,3 +49,14 @@ reviews:
 		t.Fatalf("expected interval [1, 2, 5, 10], got %v", cfg.Reviews.IntervalsDays)
 	}
 }
+
+func TestResolveEditor(t *testing.T) {
+	ed := config.ResolveEditor("auto")
+	if ed == "" {
+		t.Fatalf("expected non-empty editor")
+	}
+	// Explicit configured editor override
+	if custom := config.ResolveEditor("custom_editor"); custom != "custom_editor" {
+		t.Fatalf("expected custom_editor, got %s", custom)
+	}
+}
