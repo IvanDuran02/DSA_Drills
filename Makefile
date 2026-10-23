@@ -3,8 +3,10 @@
 SHELL := /bin/bash
 BIN := bin/drills
 PYTHON ?= .venv/bin/python3
+GOPATH_BIN := $(shell go env GOPATH)/bin
+LOCAL_BIN := $(HOME)/.local/bin
 
-all: build
+all: install
 
 build:
 	@mkdir -p bin
@@ -12,9 +14,17 @@ build:
 	@echo "Built $(BIN)"
 
 install: build
-	@mkdir -p $(shell go env GOPATH)/bin
-	cp $(BIN) $(shell go env GOPATH)/bin/drills
-	@echo "Installed drills to $(shell go env GOPATH)/bin/drills"
+	@mkdir -p $(LOCAL_BIN)
+	@cp -f $(BIN) $(LOCAL_BIN)/drills
+	@chmod +x $(LOCAL_BIN)/drills
+	@if [ -d "$(GOPATH_BIN)" ]; then \
+		cp -f $(BIN) "$(GOPATH_BIN)/drills"; \
+		chmod +x "$(GOPATH_BIN)/drills"; \
+	fi
+	@mkdir -p $(HOME)/.config/drills
+	@echo "$(CURDIR)" > $(HOME)/.config/drills/root
+	@echo "✔ Installed 'drills' to PATH: $(LOCAL_BIN)/drills and $(GOPATH_BIN)/drills"
+	@echo "✔ Configured project directory for global execution from any directory."
 
 setup:
 	@if [ ! -d ".venv" ]; then \
@@ -41,8 +51,9 @@ clean:
 
 help:
 	@echo "Algorithm Drills Build System"
-	@echo "  make build       - Compile native Go drills binary"
-	@echo "  make install     - Install drills to GOPATH/bin"
+	@echo "  make             - Compile and automatically install drills into your PATH"
+	@echo "  make build       - Compile native Go binary to bin/drills"
+	@echo "  make install     - Install drills to ~/.local/bin and GOPATH/bin"
 	@echo "  make setup       - Set up Python 3.14 virtualenv & dependencies"
 	@echo "  make test-go     - Run Go framework unit tests"
 	@echo "  make test-ref    - Run all 88 reference implementation tests"
